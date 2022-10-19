@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --c-primary: #92aedd;
+  --c-white: white;
+  --c-blue-300: #0d1a2d;
+  --c-blue-200: #15273f;
+  --c-blue-100: #00fffc;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--c-blue-300);
+  color: var(--c-primary);
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-white);
+}
+
+.container {
+  background-color: var(--c-blue-200);
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.img__hover {
+  width: 280px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.img__hover:hover {
+  background-color: var(--c-blue-100);
+}
+
+.img__hover:hover .img--icon {
+  display: block;
+}
+
+.img__hover:hover .img {
+  opacity: 0.5;
+}
+
+.img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.img--icon {
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.title {
+  color: var(--c-white);
+  font-size: 20px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.title:hover {
+  color: var(--c-blue-100);
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--c-primary);
+  margin-bottom: 15px;
+}
+.price__item {
+  display: flex;
+  align-items: center;
+}
+
+.price--ethicon {
+  width: 12px;
+  height: 18px;
+  margin-right: 4px;
+}
+.price--ethtext {
+  color: var(--c-blue-100);
+}
+
+.price--dayicon {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.author--name {
+  color: var(--c-white);
+}
+
+.author--name:hover {
+  color: var(--c-blue-100);
+}
+
+.author--img {
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--c-white);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
